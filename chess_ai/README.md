@@ -106,6 +106,6 @@ This project is open-source and available under the **MIT License**.
 ## 👤 Author
 
 **Nazım Kurt**  
-GitHub: [@nazimkurt](https://github.com/nazimkurt)
+GitHub: https://github.com/NazmKurt
 
 <img width="1090" height="705" alt="Ekran Resmi 2026-04-14 15 22 44" src="https://github.com/user-attachments/assets/7439141e-a38d-458a-adb2-ec041711e010" />
