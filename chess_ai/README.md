@@ -107,5 +107,5 @@ This project is open-source and available under the **MIT License**.
 
 **Nazım Kurt**  
 GitHub: [@nazimkurt](https://github.com/nazimkurt)
-<img width="1129" height="730" alt="Ekran Resmi 2026-04-14 15 18 04" src="https://github.com/user-attachments/assets/e9f1d310-c34b-4d47-9445-b7f9cb6e2421" />
+
 <img width="1090" height="705" alt="Ekran Resmi 2026-04-14 15 22 44" src="https://github.com/user-attachments/assets/7439141e-a38d-458a-adb2-ec041711e010" />
