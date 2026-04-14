@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f5f7;
+    color: #1f2933;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 0 16px 24px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.status-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 12px 14px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 18px;
+}
+
+#reset-btn {
+    border: none;
+    background: #2f6feb;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#reset-btn:hover {
+    background: #1e56c7;
+}
+
+.game-layout {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.captured-panel {
+    width: 170px;
+    min-height: 520px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    padding: 12px;
+}
+
+.captured-panel h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.captured-pieces {
+    font-size: 24px;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+.chessboard {
+    width: 560px;
+    height: 560px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.08s ease, filter 0.2s ease;
+}
+
+.square.light {
+    background: #f0d9b5;
+}
+
+.square.dark {
+    background: #b58863;
+}
+
+.square.selected {
+    box-shadow: inset 0 0 0 4px #1f6feb;
+}
+
+.square.legal-target::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+
+.square .piece {
+    position: relative;
+    z-index: 2;
+    transition: transform 0.18s ease;
+    cursor: grab;
+}
+
+.square:hover .piece {
+    transform: scale(1.06);
+}
+
+.square.pending {
+    filter: brightness(1.08);
+}
+
+@media (max-width: 900px) {
+    .chessboard {
+        width: 88vw;
+        height: 88vw;
+        max-width: 560px;
+        max-height: 560px;
+    }
+
+    .captured-panel {
+        width: 88vw;
+        min-height: 80px;
+    }
+}
